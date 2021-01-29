@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oblig</title>
+    <script src="A.js"></script>
+</head>
+<body>
+<h1>Bestilling av Kinobilletter</h1>
+<form action="A.js">
+    <div>
+        <label for="film">Velg film: </label>
+        <select name="film" id="film">
+            <option value="Velg film"> Velg film her</option>
+            <option value="F&F"> F&F </option>
+            <option value="F&F 2"> F&F 2</option>
+        </select>
+    </div>
+    <div>
+    <label for="antall">Antall</label>
+    <input type="number" id="antall" name="antall" min="1">
+    </div> <br>
+    <div>
+        <label for="fornavn">Fornavn</label>
+        <input type="text" id="fornavn" name="fornavn">
+    </div>
+    <div>
+    <label for="etternavn">Etternavn</label>
+    <input type="text" id="etternavn" name="etternavn">
+    </div>
+    <div>
+    <label for="telefon">Telefonnr</label>
+    <input type="text" id="telefon" name="telefon">
+    </div>
+    <div>
+        <label for="email">Epost</label>
+        <input type="text" id="email" name="email">
+    </div>
+    <button type="reset" onclick="kjopBillett()" > Kjøp Bilett</button>
+</form>
+<h3>Antall Billetter</h3>
+<div id="visKunder"></div>
+</body>
+</html>
